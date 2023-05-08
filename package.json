@@ -1,0 +1,27 @@
+{
+  "name": "boostgpt-whatsapp-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bot",
+    "chatbot",
+    "AI",
+    "whatsapp",
+    "chatgpt",
+    "boostgpt",
+    "gpt",
+    "AGI"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "boostgpt": "^1.0.8",
+    "dotenv": "^16.0.3",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.19.5"
+  }
+}
