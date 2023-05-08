@@ -39,6 +39,8 @@ client.on('ready', () => {
 client.on('message', async (message) => {
       const chat = await message.getChat();
 
+      chat.sendStateTyping();
+
       if (chat) {
         if(contacts.includes(chat.id.user)){
 
@@ -54,12 +56,11 @@ client.on('message', async (message) => {
 
           let chatbot = await boostgpt.chat(payload);
 
-          console.log(message.body,chatbot.response.chat.reply)
-
           if (chatbot.err) {
                 // message.reply(`Hi ${process.env.ERROR_MESSAGE}`)
           }else{
               if (chatbot.response.chat) {
+                 chat.clearState();
                  await chat.sendMessage(chatbot.response.chat.reply); 
               }
           }

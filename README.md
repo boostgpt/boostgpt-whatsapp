@@ -34,6 +34,11 @@ You will need to have created a BoostGPT bot and have its ID.
 To get your bot's ID, go to your bot's settings page on the BoostGPT dashboard and copy the bot ID.
 
 
+## Features
+
+- Can reply direct messages
+
+
 ## Installation
 
 `git clone git@github.com:boostgpt/boostgpt-whatsapp.git`
