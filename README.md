@@ -7,7 +7,7 @@ BoostGPT WhatsApp is a streamlined and user-friendly startup script that enables
 
 ## Features
 
-- Can reply direct messages
+- Can reply to direct messages
 
 
 ## Requirements
@@ -80,7 +80,7 @@ There we go! You should now see something like this after running the file:
 
 After scanning this QR code, the bot should be authorized and you should see a Bot is online! message being printed out.
 
-We recommend using pm2 process manager to start your bot in production mode. 
+We recommend using the pm2 process manager to start your bot in production mode. 
 
 To do this you have to:
 
