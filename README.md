@@ -9,6 +9,8 @@ BoostGPT WhatsApp is a streamlined and user-friendly startup script that enables
 
 - Can reply to direct messages
 
+- Can engage in a conversation.
+
 
 ## Requirements
 

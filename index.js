@@ -52,6 +52,7 @@ client.on('message', async (message) => {
               source_ids: process.env.BOOSTGPT_BOT_SOURCE_IDS, //The training source id's you want the AI's knowledge to be limited to.
               tags: process.env.BOOSTGPT_BOT_TAGS, //Use tags to get the segment of the training data you want the AI's knowledge to be limited to.
               top: process.env.BOOSTGPT_BOT_TOP, //Optional. The weight of training data used to form a context. Defaults to 10. Recommended settings between : 10 - 15 give better response from the AI.
+              chat_id: 'whatsapp-'+chat.id.user
           }
 
           let chatbot = await boostgpt.chat(payload);
