@@ -1,9 +1,15 @@
 {
   "name": "boostgpt-whatsapp-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run dev",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "prod-debug": "NODE_ENV=production nodemon index.js",
+    "prod": "NODE_ENV=production pm2 start index.js --name boostgpt-whatsapp",
+    "prod-restart": "NODE_ENV=production pm2 restart index.js",
+    "stop": "pm2 stop index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
